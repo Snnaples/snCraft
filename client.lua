@@ -82,7 +82,6 @@ do return (function()
                         drawInsideText(CraftConfig.insideText, 0.5, 0.85, 0.4, 255, 255, 255)
                         if IsControlJustPressed(1,51) then 
                             inside = true
-                            sendConfigToNUI()
                             SetNuiFocus(inside,inside)
                             CraftConfig.insideCallback"open" 
                             goto breakloop
