@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600&family=Poppins:wght@100;300&display=swap');
+body {
+
+    overflow: hidden;
+    display:none;
+    padding: 0;
+    user-select: none;
+    margin: 0;
+    font-family: 'Baloo Chettan 2', cursive;
+
+
+}
+
+.item-name {
+    position: relative;
+    color:white;
+    text-transform: uppercase;
+    font-size:10px;
+}
+
+.container::-webkit-scrollbar
+ {
+    width: 0px;
+    background-color: rgba(17, 5, 17, 0.2);
+}
+
+.container::-webkit-scrollbar-thumb
+{
+    background-color: rgba(17, 5, 17, 1);
+ 
+}
+.overlay {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    box-shadow: inset 15px 15px 300px rgba(4, 35, 97, 0.801);
+}
+
+.container {
+    
+    position:relative;
+    margin-top: 100px;
+    left:15%;
+    width: 1200px;
+    height: 700px;
+
+    border: double 8px transparent;
+    border-radius: 30px;
+
+    background-image: url('./img/craft.png');
+    background-repeat: no-repeat;
+    background-position-x: 350px ;
+    background-position-y: 90px ;
+
+  
+ 
+    background-color: rgba(0,0,0,0.44);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    float: middle;
+   
+    border-radius: 30px;
+    overflow-y: scroll;
+    border-bottom: 2px solid rgba(38, 92, 207, 0.863);
+}
+
+.header {
+    font-family: 'Poppins' !important;
+    color:white;
+    font-size: 50px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    transform:rotate(270deg);
+}
+
+.item {
+    text-align: center;
+    float: left;
+    width: 114px;
+    border-radius:5px 20px;
+    height: 117px;
+    
+    background-color: rgba(54, 54, 54, 0.274);
+    margin: 20px;
+    position: relative;
+    border-bottom: 2px solid rgba(38, 92, 207, 0.863);
+    width: 117px;
+    height: 117px;
+ 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: all ease .3s;
+    cursor:pointer;
+    border-right: 2px solid rgba(38, 92, 207, 0.863);
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
