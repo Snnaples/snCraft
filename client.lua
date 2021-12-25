@@ -1,8 +1,6 @@
 do return (function()
-
+            
     ::snCraft:: 
-
-
     local inside = false;
 
     local drawInsideText <const> = function(text, x, y, scale, r, g, b)
@@ -11,7 +9,7 @@ do return (function()
         SetTextProportional(0)
         SetTextScale(scale, scale)
         SetTextDropShadow(30, 5, 5, 5, 255)
-        SetTextEntry("STRING")
+        SetTextEntry"STRING"
         SetTextColour(r, g, b, 255)
         AddTextComponentString(text)
         DrawText(x, y)
@@ -79,7 +77,6 @@ do return (function()
                 local coords <const> = GetEntityCoords(PlayerPedId())
                 if #(coords - CraftConfig.location) <= 5.0 then
                     local p <const> = PlayerPedId()
-               
                     while #(GetEntityCoords(p)  - CraftConfig.location) <= 5.0 do 
                         Citizen.Wait(2)
                         drawInsideText(CraftConfig.insideText, 0.5, 0.85, 0.4, 255, 255, 255)
@@ -98,12 +95,5 @@ do return (function()
     end
 
     Citizen.CreateThread(initThreadHandler)
-    
-    
-
-
-
-
-
 
 end)() end
