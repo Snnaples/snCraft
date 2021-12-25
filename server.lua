@@ -26,9 +26,7 @@ do return (function ()
                     end
                 end
 
-                for _, T in pairs(recipe) do 
-                    vRP.tryGetInventoryItem{user_id,T.item, T.amount*craftingAmount, true}
-                end
+                for _, T in pairs(recipe) do vRP.tryGetInventoryItem{user_id,T.item, T.amount*craftingAmount, true} end
     
                 vRPclient.notify(source, {('Ai craftat ~g~%s ~w~[~g~%s~w~]'):format(itemName,craftingAmount),2})
                 vRP.giveInventoryItem{user_id,item.name, craftingAmount, false}
